@@ -7,7 +7,7 @@ class Retrace < Formula
   depends_on "automake" => :build
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
-  depends_on "openssl" => :optional
+  depends_on "openssl"
 
   devel do
     version '0.9.0'
@@ -18,7 +18,7 @@ class Retrace < Formula
 
     system "autoreconf", "-ivf"
     system "./configure", "--prefix=#{prefix}",
-                          "--with-openssl=$(brew --prefix openssl)",
+                          "--with-openssl=#{Formula["openssl"].opt_prefix}",
                           "--mandir=#{man}"
     system "make", "install"
   end
