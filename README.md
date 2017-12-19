@@ -1,5 +1,7 @@
 # Homebrew for retrace
 
+[![Build Status](https://travis-ci.org/riboseinc/homebrew-retrace.svg?branch=master)](https://travis-ci.org/riboseinc/homebrew-retrace)
+
 This tap contains formulae relating to [retrace](https://github.com/riboseinc/retrace).
 
 
@@ -7,33 +9,27 @@ This tap contains formulae relating to [retrace](https://github.com/riboseinc/re
 
 Run this and it's all done.
 
-``` sh
-brew tap riboseinc/retrace
-brew install --HEAD retrace
-```
-
-Or:
-
-``` sh
-brew install --HEAD riboseinc/retrace/retrace
-```
-
 ## Install Tap
 
 ``` sh
 brew tap riboseinc/retrace
 ```
 
-## Install retrace
+## Install Retrace
 
-Currently it is a HEAD-only formula, i.e., you must install it using the `--HEAD` option:
+To install `retrace` from release:
 
-``` sh
+```
+brew install retrace
+```
+
+To install `retrace` from git repository:
+
+```
 brew install --HEAD retrace
 ```
 
-If the formula conflicts with one from `Homebrew/homebrew` or another
-tap, you can run:
+Or:
 
 ``` sh
 brew install --HEAD riboseinc/retrace/retrace
