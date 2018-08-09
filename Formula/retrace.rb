@@ -2,8 +2,8 @@ class Retrace < Formula
   desc "Versatile Security Vulnerability / Bug Discovery Tool"
   homepage "https://github.com/riboseinc/retrace"
   head "https://github.com/riboseinc/retrace.git"
-  url "https://github.com/riboseinc/retrace/archive/v1.0.2.tar.gz"
-  sha256 "299faba3894f1283b5e0d1700bb313a240b671d934b107acc9d9d61ef68e211c"
+  url "https://github.com/riboseinc/retrace/archive/v2.0.1.tar.gz"
+  sha256 "9b4036b9943fea5b383747b14de8a58326904d8522b0721f9939581632f7dcf6"
   
   depends_on "autoconf" => :build
   depends_on "automake" => :build
@@ -12,7 +12,7 @@ class Retrace < Formula
   depends_on "openssl"
 
   devel do
-    version '1.0.2'
+    version '2.0.1'
   end
 
   def install
